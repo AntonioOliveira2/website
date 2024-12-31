@@ -1,5 +1,4 @@
 import { Link, useLocation } from "@remix-run/react";
-import { useState } from "react";
 
 export default function Navbar() {
     const location = useLocation();
