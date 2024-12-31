@@ -15,7 +15,7 @@ export default function Navbar() {
             <div className="py-3 flex">
                 <div className="pl-5 justify-left items-left">
                     <Link to="/">
-                        <img className="invert w-10 hover:scale-125 transform transition duration-250" src="/logo.svg" alt="" />
+                        <img className="invert w-10 hover:scale-125 transform transition duration-250" src="/website/logo.svg" alt="" />
                     </Link>
                 </div>
                 <div className="flex items-center justify-center w-full">

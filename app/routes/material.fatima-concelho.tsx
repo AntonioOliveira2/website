@@ -7,7 +7,7 @@ export default function FatimaConcelho() {
     const [htmlFileString, setHtmlFileString] = useState("");
 
     async function fetchHtml() {
-        const response = await fetch('/estatistica.html');
+        const response = await fetch('/website/estatistica.html');
         const res = await response.text();
 
         if (res) {
