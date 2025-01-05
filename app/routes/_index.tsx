@@ -8,7 +8,7 @@ export const links: LinksFunction = () => [
 
 export default function Index() {
   return (
-    <div className="m-[120px] font-semibold text-7xl text-gray-400">
+    <div className="md:m-[120px] min-[240px]:m-[60px] font-semibold md:text-7xl min-[240px]:text-5xl text-gray-400">
       <div className="flex slide-in-left">
         Welcome to
       </div>

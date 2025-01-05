@@ -30,7 +30,10 @@ export default function Navbar() {
                     </ul>
                 </div>
                 <div className="flex items-right justify-right">
-                    <button className="bg-grey-200 hover:bg-blue-300 text-blue-600 font-semibold hover:text-white p-2 mr-3 border border-blue-500 hover:border-transparent rounded shadow">
+                    <button className="bg-grey-200 hover:bg-blue-300
+                     text-blue-600 font-semibold hover:text-white 
+                     p-2 mr-3 border border-blue-500 hover:border-transparent 
+                     rounded shadow">
                         <a href="/website/example.pdf">My CV</a>
                     </button>
                 </div>
