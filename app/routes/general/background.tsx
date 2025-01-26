@@ -2,15 +2,11 @@ import React, { useEffect, useState } from "react";
 import { LinksFunction } from "@remix-run/node";
 
 import styles from "../../css/background.css?url";
-import bgImage from "/website/background.png?url"
-
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: styles },
   { rel: "", href: "png"}
 ];
-
-
 export default function MyComponent() {
   const [dimensions, setdimensions] = useState({
     width: 0,
