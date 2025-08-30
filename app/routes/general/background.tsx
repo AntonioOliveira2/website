@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { LinksFunction } from "@remix-run/node";
-
 import styles from "../../css/background.css?url";
+import type { LinksFunction } from "react-router";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: styles },
@@ -24,7 +23,6 @@ export default function MyComponent() {
     // Update size immediately on mount
     handleResize();
 
-    // Add resize event listener
     window.addEventListener("resize", handleResize);
 
     // Cleanup listener on unmount

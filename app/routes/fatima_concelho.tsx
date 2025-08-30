@@ -1,12 +1,11 @@
-import parse from 'html-react-parser';
 import { useEffect, useState } from 'react';
-
+import parseDocument from 'htmlparser2' ;
 export default function FatimaConcelho() {
 
     const [htmlFileString, setHtmlFileString] = useState("");
 
     async function fetchHtml() {
-        const response = await fetch('/website/estatistica.html');
+        const response = await fetch('estatistica.html');
         const res = await response.text();
 
         if (res) {
@@ -19,6 +18,12 @@ export default function FatimaConcelho() {
     }, []);
 
     return (
-        parse(htmlFileString)
+        <div className="w-full h-screen">
+        <iframe
+            src="/notebook.html"
+            title="Jupyter Notebook"
+            className="w-full h-full border-none"
+        />
+        </div>
     );
 }

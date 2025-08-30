@@ -1,4 +1,4 @@
-import type { LinksFunction } from "@remix-run/node";
+import type { LinksFunction } from "react-router";
 import styles from "../css/index.css?url";
 import { useEffect, useState } from "react";
 
@@ -34,19 +34,19 @@ export default function Index() {
   }, []);
   return (
     <>
-      <div className="md:m-[120px] min-[240px]:m-[60px] font-semibold md:text-7xl min-[240px]:text-5xl text-gray-400">
+      <div className="relative md:m-[120px] min-[240px]:m-[60px] font-semibold md:text-7xl min-[240px]:text-5xl text-gray-400 overflow-hidden bg-transparent">
         <div className="flex slide-in-left">
           Welcome to
         </div>
-        <div className="flex slide-in-right delay-[2250ms]" style={{'animation-delay' : '250ms'}}>
+        <div className="flex slide-in-right delay-[2250ms]" style={{'animationDelay' : '250ms'}}>
           my personal
         </div>
-        <div className="flex slide-in-left delay-[4500ms]" style={{'animation-delay' : '500ms'}}>
+        <div className="flex slide-in-left delay-[4500ms]" style={{'animationDelay' : '500ms'}}>
           website.
         </div>
       </div>
       <div className="absolute bottom-0 right-0 md:m-[120px] min-[240px]:m-[60px]">
-        <div className="font-semibold md:text-7xl min-[240px]: text-5xl text-gray-400 slide-in-bottom" style={{'animation-delay' : '1000ms'}}>
+        <div className="font-semibold md:text-7xl min-[240px]: text-5xl text-gray-400 slide-in-bottom overflow-hidden" style={{'animationDelay' : '1000ms'}}>
           <div>An engineer</div>
           <div>in the making.</div>
         </div>
